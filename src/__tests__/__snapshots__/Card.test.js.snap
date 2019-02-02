@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> component matches the snapshot 1`] = `
+<div
+  className="react-component-library__card "
+  style={Object {}}
+>
+  <h1
+    className="react-component-library__card__header "
+    style={Object {}}
+  >
+    This is the header
+  </h1>
+  <div
+    className="react-component-library__card__children "
+    style={Object {}}
+  >
+    <div>
+      <p>
+        Child paragraph 1
+      </p>
+      <p>
+        Child paragraph 2
+      </p>
+    </div>
+  </div>
+</div>
+`;

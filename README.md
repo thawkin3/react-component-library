@@ -1,0 +1,2 @@
+# React Component Library
+Reusable components and functions for React apps. This is an example project demonstrating the basic setup for creating a component library that exports individual Babel-compiled components that are ready to be used as a package by other apps.
