@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Reusable components and functions for React apps",
   "main": "dist/index.js",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@babel/runtime": "^7.2.0",
     "react-css-transition": "^0.7.4"
@@ -35,10 +35,10 @@
     "coverageDirectory": "coverage",
     "coverageThreshold": {
       "global": {
-        "branches": 60,
-        "functions": 60,
-        "lines": 65,
-        "statements": 65
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
       }
     },
     "setupFiles": [
