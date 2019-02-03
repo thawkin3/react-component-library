@@ -1,6 +1,6 @@
 {
   "name": "@thawkin3/react-component-library",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Reusable components and functions for React apps",
   "main": "dist/index.js",
   "private": false,
@@ -126,5 +126,7 @@
     "url": "https://github.com/thawkin3/react-component-library/issues"
   },
   "homepage": "https://github.com/thawkin3/react-component-library#readme",
-  "config" : { "access" : "public" }
+  "config": {
+    "access": "public"
+  }
 }
