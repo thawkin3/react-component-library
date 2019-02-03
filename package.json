@@ -4,10 +4,6 @@
   "description": "Reusable components and functions for React apps",
   "main": "dist/index.js",
   "private": false,
-  "dependencies": {
-    "@babel/runtime": "^7.2.0",
-    "react-css-transition": "^0.7.4"
-  },
   "scripts": {
     "test": "$(npm bin)/flow && node scripts/test.js --env=jsdom",
     "start": "concurrently \"npm run flow:watch\" \"NODE_ENV=production npx babel src --watch --ignore '**/__tests__' --out-dir dist --verbose\" \"npm run flowcopy:watch\"",
@@ -21,6 +17,42 @@
     "copy-files": "node scripts/copy-files.js",
     "local": "npm run build && npm run copy-files",
     "release": "npm run build && npm run copy-files && cd dist && npm publish"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.2.0",
+    "react-css-transition": "^0.7.4"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.55",
+    "@babel/core": "^7.0.0-beta.55",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.55",
+    "@babel/plugin-transform-spread": "^7.0.0-beta.55",
+    "@babel/preset-env": "^7.0.0-beta.55",
+    "@babel/preset-flow": "^7.0.0-rc.2",
+    "@babel/preset-react": "^7.0.0-beta.55",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.0.1",
+    "babel-loader": "^7.0.0",
+    "concurrently": "^3.6.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
+    "flow-bin": "^0.79.1",
+    "flow-copy-source": "^2.0.2",
+    "flow-typed": "^2.5.1",
+    "flow-watch": "^1.1.3",
+    "jest": "^23.1.0",
+    "moxios": "^0.4.0",
+    "react": "^16.3.2",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.3.2",
+    "react-test-renderer": "^16.4.1",
+    "regenerator-runtime": "^0.12.1"
   },
   "watch": {
     "build": "src/"
@@ -94,36 +126,5 @@
     "url": "https://github.com/thawkin3/react-component-library/issues"
   },
   "homepage": "https://github.com/thawkin3/react-component-library#readme",
-  "peerDependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.55",
-    "@babel/core": "^7.0.0-beta.55",
-    "@babel/plugin-proposal-class-properties": "^7.1.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.55",
-    "@babel/plugin-transform-spread": "^7.0.0-beta.55",
-    "@babel/preset-env": "^7.0.0-beta.55",
-    "@babel/preset-flow": "^7.0.0-rc.2",
-    "@babel/preset-react": "^7.0.0-beta.55",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^23.0.1",
-    "babel-loader": "^7.0.0",
-    "concurrently": "^3.6.1",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "enzyme-to-json": "^3.3.4",
-    "flow-bin": "^0.79.1",
-    "flow-copy-source": "^2.0.2",
-    "flow-typed": "^2.5.1",
-    "flow-watch": "^1.1.3",
-    "jest": "^23.1.0",
-    "moxios": "^0.4.0",
-    "react": "^16.3.2",
-    "react-addons-test-utils": "^15.6.2",
-    "react-dom": "^16.3.2",
-    "react-test-renderer": "^16.4.1",
-    "regenerator-runtime": "^0.12.1"
-  }
+  "config" : { "access" : "public" }
 }
